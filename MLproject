@@ -1,0 +1,9 @@
+name: jap2ind
+
+docker_env:
+    image: jap2ind
+    volumes: ["$(pwd):/jap2ind"]
+
+entry_points:
+    main:
+        command: python train.py --mlflow
